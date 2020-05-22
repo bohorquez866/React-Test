@@ -1,0 +1,32 @@
+.navbar, .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+.logo {
+margin-left: 3rem;
+   }
+.navbar{
+    max-width: 100%;
+    font-weight: 700;
+    margin-top: 2rem;
+  
+ //UL
+    &__list {
+        padding: 0 5%;
+        margin: 0;
+justify-content: center;
+text-transform: uppercase;
+i {
+    margin-left: 10%;
+    font-size: 1.8rem;
+}
+//LI
+    }
+    &__item {
+        &:not(:last-child){
+        margin-right: 8%;}
+     
+    }
+}

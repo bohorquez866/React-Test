@@ -1,0 +1,70 @@
+@mixin gridTemplateCol($grid) {
+    display: grid;
+    grid-template-columns: $grid;
+}
+
+
+.content {
+ 
+    &__container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 10% 0 0 10rem;
+    }
+     
+    &__card-wrapper {
+        grid-column: 1/2;
+        @include gridTemplateCol(repeat(2, 1fr));
+        grid-gap: 3rem;
+    
+        
+    }
+    &__card{
+        background-color: #fff;
+        padding: 1.5rem;
+        font-size: 1.2rem;
+    
+    &-title {
+        font-size: 2.2rem;
+        width: 85%;
+    }
+        
+    &-send {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    i{
+        font-size: 3rem;
+     
+    }
+}
+
+        &-text{
+            font-size: 2.2rem;
+            margin-top: 2rem;
+            max-width: 90%;
+        }
+
+        &--3 {
+            grid-column: 1/3;
+            h1 {
+                 font-size: 4.2rem;
+                font-family: serif;
+}
+
+        }
+    }
+    &__btn{
+        grid-column: 2/3;
+        justify-items: center;
+        color: inherit;
+        font-size: 2rem;
+        i{
+            margin-left: 3rem;
+        }
+        
+    }}
+
+
+
