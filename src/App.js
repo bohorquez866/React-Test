@@ -5,8 +5,9 @@ import {
     } from 'react-router-dom';
 
 import './Assets/css/main.css';
-import Header from './components/headerComponent/header';
-import Content from './components/contentComponent/content';
+import Navbar from './components/pages/navbar';
+import Content from './components/pages/content';
+import NavbarLogin from './components/pages/login-nav';
 
 
 
@@ -14,8 +15,9 @@ function App() {
   return (
     <Router>
     <section className="App">
-     
-     <Header /> 
+
+    <Route exact path="/" component={Navbar} />
+
 
     <Content />
   

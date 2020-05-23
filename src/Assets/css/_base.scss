@@ -1,0 +1,45 @@
+$text-blue: rgb(45, 136, 211);
+$bg-blue: #F1F8FE;
+$font-primary: 'Open Sans', sans-serif;
+//
+
+*, *::before, *::after{
+margin: 0;
+padding: 0;
+box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-size: $font-primary;
+
+}
+
+body{
+    font-size: 1.4rem;
+    background-color: $bg-blue;
+    color: $text-blue;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+i:hover{
+    cursor: pointer;
+}
+//utilities
+.mg-auto {
+    margin: 0 auto;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+  
+}

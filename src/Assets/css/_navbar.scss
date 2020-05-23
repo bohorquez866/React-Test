@@ -7,6 +7,14 @@
 .logo {
 margin-left: 3rem;
    }
+
+.sort-logo {
+    img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 .navbar{
     max-width: 100%;
     font-weight: 700;
@@ -29,4 +37,11 @@ i {
         margin-right: 8%;}
      
     }
+}
+
+.navbar--login{
+    background-color: $text-blue;
+    align-items: center;
+    margin: 0;
+    color: white;
 }

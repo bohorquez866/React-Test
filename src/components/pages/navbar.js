@@ -3,10 +3,10 @@ import {
   Link
 } from 'react-router-dom';
 
-class header extends Component {
+class navbar extends Component {
   render() {
   return (
-       <nav className="navbar ">
+       <nav className="navbar">
       <div className="logo">
            XD
       </div>
@@ -37,4 +37,4 @@ class header extends Component {
 }
 }
 
-export default header;
+export default navbar;
